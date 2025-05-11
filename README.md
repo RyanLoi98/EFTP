@@ -65,15 +65,32 @@ Example:
 
 Example (download):
 
+- To test download from the server to the client go into my testcases directory and get either a binary or text file (whatever you want to download) and place it into the server directory (or the working directory for the server). Then write the name of the file as the 3rd argument for the client. 
+
+- For instance lets say I want to download the data.txt text file from my testcases, then I would take this data.txt file and place it into the server directory (or the working directory for the server). Then the 3rd argument would be data.txt for my client.
+
 ```bash
-./eftpclient alice:1234@127.0.0.1:9090 download test.txt
+./eftpclient alice:1234@127.0.0.1:9090 download data.txt
 ```
 
 Example (upload):
 
+- To test uploading for the client to the server go into my testcases directory and get either a binary or text file (whatever you want to upload) and place it into the client directory (or the working directory for the client). Then write the name of the file as the 3rd argument for the client. 
+
+- For instance lets say I want to upload the data.txt text file from my testcases, then I would take this data.txt file and place it into the server directory (or the working directory for the server). Then the 3rd argument would be data.txt for my client.
+
+
 ```bash
-./eftpclient alice:1234@127.0.0.1:9090 upload newdoc.pdf
+./eftpclient alice:1234@127.0.0.1:9090 upload data.txt
 ```
+
+---
+
+## 📸 Screenshot
+
+Here is a screenshot of the file transfer in action:
+
+![Screenshot](https://i.imgur.com/gv7ozxj.png)
 
 ---
 
